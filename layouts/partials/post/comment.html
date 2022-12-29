@@ -1,5 +1,5 @@
 {{ if .IsPage }}
-  {{ if and (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable)) }}
+  {{ if and ($.Params.comments) (.Site.Params.comment.disqus.enable) (not (.Site.Config.Privacy.Disqus.Disable)) }}
     <div id="disqus_thread">
       <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
     </div>
